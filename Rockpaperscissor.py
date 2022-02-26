@@ -1,4 +1,4 @@
-def rock_paper_scissor(num1,num2,bit1.bit2):
+def rock_paper_scissor(num1,num2,bit1,bit2):
     p1=int(num1[bit1])%3
     p2=int(num1[bit2])%3
     if(player_one[p1]==player_two[p2]):
@@ -22,6 +22,7 @@ while(1):
     num2=input("Player two,Enter your choice")
     bit1=int(input("Player one,Enter the secret bit position"))
     bit2=int(input("Player two,Enter the secret bit position"))
+    rock_paper_scissor(num1,num2,bit1,bit2)
     ch=input("Do you want to continue? Y/n")
     if(ch=='n'):
         break
