@@ -34,3 +34,31 @@ if choice ==3:
     s= (a+b+c)/2
     area = math.sqrt(s*(s-a)*(s-b)*(s-c))
     print(f"The area of the triangle is {round(area,2)}")
+---------------------------------------------------------------------------------------------------
+
+side = int(input("Enter the side:"))
+Area = side*side
+print("Area of the square="+str(Area))
+=========================================
+l = float(input('Enter the length of a Rectangle: '))
+b = float(input('Enter the breadth of a Rectangle: '))
+Area = l * b
+print("Area of a Rectangle is: %.2f" %Area)
+=================================================
+# Python Program to find the area of triangle
+
+a = 5
+b = 6
+c = 7
+
+# Uncomment below to take inputs from the user
+# a = float(input('Enter first side: '))
+# b = float(input('Enter second side: '))
+# c = float(input('Enter third side: '))
+
+# calculate the semi-perimeter
+s = (a + b + c) / 2
+
+# calculate the area
+area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+print('The area of the triangle is %0.2f' %area)
