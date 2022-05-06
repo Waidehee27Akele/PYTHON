@@ -1,1 +1,40 @@
+*** SETS***
 
+s = set()
+s_from_list = set([1,2,3,4])
+print(s_from_list)
+print(type(s_from_list))
+s.add(1)
+s.add(2)
+s.remove(2)
+s1 = {4, 6}
+print(s.isdisjoint(s1))
+------------------------------------------
+example:
+d1 = {"benefit": "advantage" ,  "watan" : "Country" , "patriot" : "the country lover" , "variable in python": " the container in which the data is kept"}
+print("The word you want")
+Search = input()
+print("The meaning of the word above is :")
+print(d1[Search])
+print("Thanks for using dictionary")
+-------------------------------------------
+***ELSE AND ELIF***
+
+list1 = [5,7,3]
+print(15 not in list1)
+if 15 not in list1:
+    print("its in the list")
+    
+    
+print("What is your age?")
+age = int(input())
+if age<18:
+    print("You cannot drive")
+    
+elif age==18:
+    print("We will think about you")
+    
+else:
+    print("You can drive")
+
+ 
