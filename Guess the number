@@ -1,3 +1,5 @@
+##This prog correct but here is no limitation of num of guesses.
+
 winning_number = 20
 
 print("This is a number guessing game")
@@ -18,3 +20,24 @@ while not game_over:
             print("You guess too high!")
             guess += 1
             input_number = int(input("Guess again:"))
+------------------------------------------------------------------------------------------------------            
+##Num of guesses limited.
+
+n=18
+num_of_guesses=1
+print("Number of guesses is limited to only 9 times: ")
+while (num_of_guesses<=9):
+    guess_number = int(input("Guess the number :\n"))
+    if guess_number<18:
+        print("You enter less num please input greater num.\n")
+    elif guess_number>18:
+        print("You enter greater number input smaller number.\n")
+    else:
+        print("You won\n")
+        print(num_of_guesses,"no of guesses he took to finish.")
+        break
+    print(9-num_of_guesses,"no of guesses left")
+    num_of_guesses = num_of_guesses + 1
+    
+if(num_of_guesses>9):
+    print("Game Over")
