@@ -10,6 +10,13 @@ def factorial_iterative(n):
         fac = fac * (i+1)
     return fac
 
-number = int(input("Enter then number"))
+def factorial_recursive(n):
+    if n==1:
+        return 1
+    
+    else:
+        return n* factorial_recursive(n-1)
 
+number = int(input("Enter then number"))
 print("Factorial using Iterative Method",factorial_iterative(number))
+print("Factorial using recursive Method",factorial_recursive(number))
